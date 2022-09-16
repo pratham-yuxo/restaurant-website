@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Food Delivery
+
+    link(rel='stylesheet' href='../static/39_food.css')
+    link(rel='stylesheet' media='screen and (max-width: 1093px)' href='../static/39_phone.css')
+    include ../static/index.js
+  body
+    nav#nav
+      #logo
+        img(src='/static/imgs/goof.png' alt='')
+      ul
+        li.item
+          a(href='#home') Home
+        li.item
+          a(href='#service-cont') Services
+        li.item
+          a(href='#client-section') Our Parteners
+        li.item
+          a(href='#contact') About Us
+    section#home
+      h1.primary Welcome to our online portal
+      p
+        | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt ipsa, asperiores sapiente nostrum
+        | tempora doloribus fuga velit excepturi id ex quaerat voluptates fugiat eum, odit hic laudantium dolor facere
+        | nam necessitatibus quisquam aut?
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam, necessitatibus aliquam nemo debitis
+        | libero incidunt ab atque minima cupiditate facere excepturi minus tenetur eius cumque consequatur, eaque
+        | corrupti dolores temporibus tempora?
+      button.btn Order Now!!!
+    section#service-cont
+      h1.primary-center Our Services
+      #services
+        .box
+          img(src='/static/imgs/pizza.png' alt='')
+          h2.secondary-center Food Ordering
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe excepturi hic, voluptates
+            | voluptas dolores illo iste sit cum perspiciatis eaque eligendi? Odit, magnam.
+        .box
+          img(src='/static/imgs/cat.png' alt='')
+          h2.secondary-center Cattering
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe excepturi hic, voluptates
+            | voluptas endi? Odit, magnam.
+        .box
+          img(src='/static/imgs/deliver-removebg-preview.png' alt='')
+          h2.secondary-center Home Delivery
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus saepe excepturi hic, voluptates
+            | voluptas eligendi? Odit, magnam.
+    section#client-section
+      h1.primary-center Our Parteners
+      #client
+        .client-item
+          img(src='/static/imgs/donald.png' alt='')
+        .client-item
+          img(src='/static/imgs/pizza hut.png' alt='')
+        .client-item
+          img(src='/static/imgs/burger.png' alt='')
+        .client-item
+          img(src='/static/imgs/pepsi.png' alt='')
+    section#contact
+      h1.primary-center Become Our Customer Now!!
+      #contact-box
+        form(action='/contact', method='post')
+          .form-group
+            label.name(for='name') Name:
+            input#name(type='text' name='name' placeholder='Enter your Name')
+          .form-group
+            label.name(for='email') E-mail:
+            input#email(type='email' name='name' placeholder='Enter your E-mail')
+          .form-group
+            label.name(for='phone') Name:
+            input#phone(type='phone' name='Phone numberd' placeholder='Enter your Phone number')
+          .form-group
+            label.name(for='message') Message:
+            textarea#message(name='message' cols='30' rows='10')
+    footer
+      .center
+        | Copyright © www.gharkakhana.com All rights reserved

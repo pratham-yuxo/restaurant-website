@@ -1,0 +1,209 @@
+/*Css reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*navigation bar*/
+#nav{
+    
+    align-items: center;
+    display: flex;
+    position: sticky ;
+    top: 0px;
+  
+}
+/*nav bar : logo and image*/
+#logo{
+
+    margin: 1em 4em;  
+}
+#logo img{
+    height: 36px;
+    width: 54px;
+    margin: 0px -42px;
+}
+/* navbar list styling*/  
+#nav ul{ 
+    display: flex;
+    font-family:'Baloo Bhai';
+}
+#nav::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#nav ul li{
+    list-style: none;
+    font-size: 1.2em;
+}
+#nav ul li a{
+    color: white;
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: 'Yeon Sung';
+}
+#nav ul li a:hover{
+color: black;
+    background-color: white;
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:390px ;
+}
+#home::before{
+   content: "";
+   
+    background: url('/static/imgs/masala.webp')no-repeat center center/cover;
+
+    position: absolute;
+    top: 0px;
+left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -20;
+    opacity: 0.8;
+
+}
+/* utility classes */
+.primary{
+    
+    font-family: sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.primary-center{
+    
+    font-size: 2.5rem;
+    text-align: center;
+}
+.service-cont h1{
+   margin-top: 30px;
+}
+.secondary-center{
+    font-family: sans-serif;
+    font-size: 2-8rem;
+    padding: 12px;
+    text-align: center;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: none;
+    background-color: rgb(88, 81, 81);
+    color: white;
+    margin: 25px 2px;
+    font-size: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    display: block;
+    align-items: center;
+}
+#services{
+    margin: 46px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid red;
+    border-radius: 15px;
+    margin: 3px 6px;
+    padding: 34px;
+    background-color: rgb(185, 185, 231);
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    width:160px;
+    
+}
+/*client section*/
+html{
+    scroll-behavior: smooth;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/static/imgs/salad.jpg');
+    opacity: 0.6;
+    z-index: -1;
+    width: 100%;
+    height: 344px;
+
+}
+.client-item{
+padding:34px ;
+
+}
+#client img{
+    height: 120px;
+   
+}
+/*contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('/static/imgs/social.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+   
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#contact-box form{
+
+width: 35%;
+}
+#contact-box form{
+font-size: 1.3rem;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+footer{
+    
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 9px 20px ;
+}
+
+
